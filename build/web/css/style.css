@@ -1,0 +1,137 @@
+@font-face{
+    font-family: Comfortaa;
+    src: url(fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+*, body {
+margin: 0;
+}
+.container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns:  20% auto 20%;
+        grid-template-rows: 20% auto 20%;
+		align-items: center;
+        background-image: url(../images/slika.jpg);
+    	margin: 0;
+    	border: solid thin black;
+
+    	}
+.img, img {
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 2;
+min-width: 100%;
+place-self: stretch;
+/* background-image: url(../images/logo.png); */
+}
+.h1 {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+text-align: center;
+align-self: center;
+}
+.buttons {
+grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end:2;
+place-self: center stretch;
+}
+nav {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 4;
+     background-color: #423;
+     background-color: white;
+     list-style: none;
+     list-style-position: inside;
+		width: 12em;
+		/* border-right: 1px solid #000; */
+        padding: 0 0 1em 0;
+        margin-bottom: 1em;
+        font-family: 'Trebuchet MS', 'Lucida Grande',
+        Verdana, Lucida, Geneva, Helvetica, 
+        Arial, sans-serif;
+        background-color: white; /*#90bade; */
+        color: red /* #333; */
+        }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        }
+        
+    nav li {
+        border-bottom: 1px solid #90bade;
+        margin: 0;
+        }
+
+    nav li a {
+        display: block;
+        padding: 5px 5px 5px 0.5em;
+        border-left: 10px solid #1958b7;
+        border-right: 10px solid #508fc4;
+        background-color: #2175bc;
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        }
+
+    html>body nav li a {
+        width: auto;
+        }
+
+    nav li a:hover {
+        border-left: 10px solid #1c64d1;
+        border-right: 10px solid #5ba3e0;
+        background-color: #2586d7;
+        color: #fff;
+        }
+
+.main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    place-self: stretch center;
+    margin: 10px;
+    background-color: blue;
+}
+
+.ads {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3;
+}
+
+.contact {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 3;
+grid-row-end:4;
+}
+.copyright{
+grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start: 3;
+grid-row-end: 4;
+}
+a:link {
+     color: red;
+   }
+   a:visited {
+     color: green;
+     }
+     a:hover {
+       color: hotpink;
+     }
+     a:active {
+       color: blue;
+     }
